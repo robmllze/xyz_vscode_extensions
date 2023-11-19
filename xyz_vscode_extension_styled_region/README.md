@@ -10,7 +10,7 @@ An extension that allows you to apply custom styles to marked regions in your co
 
 ## Example
 
-![Usage Example](example.png)
+![Usage Example](xyz_vscode_extension_styled_region/example.png)
 
 ## Installation
 
