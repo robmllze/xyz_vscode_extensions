@@ -3,16 +3,17 @@
   "name": "xyz-bulk-rename",
   "displayName": "XYZ Bulk Rename",
   "description": "An extension to quickly bulk-rename files and folders",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "engines": {
     "vscode": "^1.76.0"
   },
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/robmllze/xyz_bulk_rename.git"
+    "url": "https://github.com/robmllze/xyz_vscode_extensions.git"
   },
   "categories": [
+    "Formatters",
     "Other"
   ],
   "activationEvents": [],

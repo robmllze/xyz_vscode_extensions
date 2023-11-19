@@ -1,6 +1,6 @@
 # Change Log
 
-## [0.12.0]
+## [0.13.0]
 
 - Bug fixes
 
