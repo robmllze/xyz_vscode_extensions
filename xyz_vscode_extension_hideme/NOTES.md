@@ -1,1 +1,0 @@
-https://dev.azure.com/

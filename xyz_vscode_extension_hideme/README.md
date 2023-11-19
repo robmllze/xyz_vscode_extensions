@@ -1,6 +1,6 @@
 # XYZ .hideme
 
-An extension that allows you to easily hide files and folders that are listed in your project's .hideme file.
+An extension that allows you to easily hide files and folders that are listed in your project's `.hideme` file.
 
 # How to use
 
@@ -16,3 +16,14 @@ lib/main.dart
 *.g.dart
 *.md
 ```
+
+## License
+
+This extension is licensed under the [MIT License](LICENSE).
+
+## Other Cool Packages
+
+- Enhance your coding experience with [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region)
+- Rename files and folders in your project in bulk with [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename)
+
+<img src="icon.png" alt="Alt text" width="72px" height="72px"/>
