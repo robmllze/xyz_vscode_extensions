@@ -1,0 +1,52 @@
+{
+  "publisher": "robmllze",
+  "name": "xyz-bulk-rename",
+  "displayName": "XYZ Bulk Rename",
+  "description": "An extension to quickly bulk-rename files and folders",
+  "version": "0.3.7",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robmllze/xyz_bulk_rename.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "xyz-bulk-rename.start",
+        "title": "[XYZ Bulk Rename] Start"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "xyz-bulk-rename.start",
+          "when": "explorerViewletFocus"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.76.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5",
+    "@vscode/test-electron": "^2.2.3"
+  }
+}
