@@ -220,4 +220,4 @@ This extension is licensed under the [MIT License](LICENSE).
 - Rename files and folders in your project in bulk with [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename)
 - Easily hide files and folders that are listed in your project's `.hideme` file. [XYZ .hideme](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-hideme)
 
-<img src="icon.png" alt="Alt text" width="72px" height="72px"/>
+<img src="xyz_vscode_extension_styled_region/icon.png" alt="Alt text" width="72px" height="72px"/>

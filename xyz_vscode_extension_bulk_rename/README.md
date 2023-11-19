@@ -44,4 +44,4 @@ This extension is licensed under the [MIT License](LICENSE).
 - Enhance your coding experience with [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region)
 - Easily hide files and folders that are listed in your project's `.hideme` file. [XYZ .hideme](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-hideme)
 
-<img src="icon.png" alt="Alt text" width="72px" height="72px"/>
+<img src="xyz_vscode_extension_bulk_rename/icon.png" alt="Alt text" width="72px" height="72px"/>

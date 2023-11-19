@@ -26,4 +26,4 @@ This extension is licensed under the [MIT License](LICENSE).
 - Enhance your coding experience with [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region)
 - Rename files and folders in your project in bulk with [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename)
 
-<img src="icon.png" alt="Alt text" width="72px" height="72px"/>
+<img src="xyz_vscode_extension_hideme/icon.png" alt="Alt text" width="72px" height="72px"/>
