@@ -45,110 +45,150 @@
       ]
     },
     "configuration": {
-      "title": "XYZ Styled Region Configuration",
+      "title": "[xyz-styled-region] Configuration",
       "properties": {
-        "xyz.styledRegion.styles": {
-          "type": "object",
-          "default": {},
-          "description": "Configure styled regions.",
-          "additionalProperties": {
-            "type": "object",
-            "description": "Properties for a specific style name.",
-            "properties": {
-              "color": {
-                "type": "string",
-                "description": "Specify the text color. e.g., \"green\"."
-              },
-              "backgroundColor": {
-                "type": "string",
-                "description": "Set the background color of the region. e.g., \"#f2f2f2\"."
-              },
-              "border": {
-                "type": "string",
-                "description": "Define the region's border. e.g., \"2px solid red\"."
-              },
-              "outline": {
-                "type": "string",
-                "description": "Designate the region's outline. e.g., \"1px dashed blue\"."
-              },
-              "fontWeight": {
-                "type": "string",
-                "description": "Determine the text's weight. e.g., \"bold\"."
-              },
-              "textDecoration": {
-                "type": "string",
-                "description": "Define text decorations like underline. e.g., \"underline wavy purple\"."
-              },
-              "letterSpacing": {
-                "type": "string",
-                "description": "Adjust the spacing between letters. e.g., \"2px\"."
-              },
-              "opacity": {
-                "type": "string",
-                "description": "Control the region' opacity. Ranges from 0 (invisible) to 1 (fully visible). e.g., \"0.5\"."
-              },
-              "borderRadius": {
-                "type": "string",
-                "description": "Add rounded corners for the border. e.g., \"5px\"."
-              },
-              "cursor": {
-                "type": "string",
-                "description": "Determine the cursor when hovering over the region. e.g., \"pointer\"."
-              },
-              "margin": {
-                "type": "string",
-                "description": "Set margin around the region (top/bottom). e.g., \"5px 0px\"."
-              },
-              "padding": {
-                "type": "string",
-                "description": "Provide space between content and the border/outline. e.g., \"5px\"."
-              },
-              "overviewRulerColor": {
-                "type": "string",
-                "description": "Color for the mark in the overview ruler. e.g., \"blue\"."
-              },
-              "gutterIconPath": {
-                "type": "string",
-                "description": "Path for the icon shown in the gutter. e.g., \"path_to_icon\"."
-              },
-              "gutterIconSize": {
-                "type": "string",
-                "description": "Specify the size of the gutter icon. Options are \"contain\", \"auto\", or a percentage like \"50%\"."
-              },
-              "before": {
-                "type": "object",
-                "description": "Add content before each line in the region.",
-                "properties": {
-                  "contentText": {
-                    "type": "string",
-                    "description": "Text to insert before the line. e.g., \"=> \"."
-                  },
-                  "color": {
-                    "type": "string",
-                    "description": "Color for the content placed before. e.g., \"blue\"."
-                  }
-                }
-              },
-              "after": {
-                "type": "object",
-                "description": "Insert content after each line in the region.",
-                "properties": {
-                  "contentText": {
-                    "type": "string",
-                    "description": "Text to insert after the line. e.g., \" <=\". "
-                  },
-                  "color": {
-                    "type": "string",
-                    "description": "Color for the content placed after. e.g., \"red\"."
-                  }
-                }
-              },
-              "isWholeLine": {
-                "type": "boolean",
-                "description": "Apply style to the entire line including whitespace. e.g., true or false."
-              }
+        "xyz-styled-region.styles": {
+          "example-style": {
+            "border": "2px solid red",
+            "outline": "1px dashed blue",
+            "color": "green",
+            "backgroundColor": "#f2f2f2",
+            "fontWeight": "bold",
+            "fontStyle": "italic",
+            "textDecoration": "underline wavy purple",
+            "letterSpacing": "2px",
+            "opacity": "0.5",
+            "borderRadius": "5px",
+            "cursor": "pointer",
+            "margin": "5px 0px",
+            "padding": "5px",
+            "overviewRulerColor": "blue",
+            "gutterIconPath": "path_to_icon",
+            "gutterIconSize": "contain",
+            "before": {
+              "contentText": "=> ",
+              "color": "blue"
             },
-            "additionalProperties": true
+            "after": {
+              "contentText": " <=",
+              "color": "red"
+            }
+          },
+          "title": {
+            "backgroundColor": "#00ff000c",
+            "isWholeLine": true
+          },
+          "header": {
+            "backgroundColor": "#00ff000c",
+            "isWholeLine": true,
+            "before": {
+              "contentText": "// ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+            },
+            "after": {
+              "contentText": "// ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
+            }
+          },
+          "note": {
+            "color": "#a6a6a6",
+            "backgroundColor": "#1a1a1a1a",
+            "isWholeLine": true,
+            "outline": "1px dashed #a6a6a64d",
+            "before": {
+              "contentText": "\n"
+            }
+          },
+          "letter": {
+            "color": "#000000",
+            "backgroundColor": "#ffffffcc",
+            "isWholeLine": true,
+            "outline": "1px dashed black"
+          },
+          "todo": {
+            "opacity": "0.7",
+            "textDecoration": "underline",
+            "backgroundColor": "#ffffff0d",
+            "isWholeLine": true
+          },
+          "deprecated": {
+            "opacity": "0.7",
+            "textDecoration": "line-through"
+          },
+          "error": {
+            "opacity": "0.7",
+            "backgroundColor": "#ff00000d",
+            "fontWeight": "bold",
+            "isWholeLine": true
+          },
+          "fixme": {
+            "opacity": "0.7",
+            "backgroundColor": "#ffff000d",
+            "fontStyle": "italic",
+            "isWholeLine": true
+          },
+          "do-not-modify": {
+            "opacity": "0.7",
+            "backgroundColor": "#0d7fff0d",
+            "isWholeLine": true
+          },
+          "red": {
+            "color": "#ff7f7f80",
+            "backgroundColor": "#ff7f7f0d",
+            "isWholeLine": true
+          },
+          "green": {
+            "color": "#7fff7f80",
+            "backgroundColor": "#7fff7f0d",
+            "isWholeLine": true
+          },
+          "blue": {
+            "color": "#0d7fff80",
+            "backgroundColor": "#0d7fff0d",
+            "isWholeLine": true
+          },
+          "yellow": {
+            "color": "#ffff7f80",
+            "backgroundColor": "#ffff7f0d",
+            "isWholeLine": true
+          },
+          "brown": {
+            "color": "#a6756380",
+            "backgroundColor": "#a675630d",
+            "isWholeLine": true
+          },
+          "orange": {
+            "color": "#ffbf7f80",
+            "backgroundColor": "#ffbf7f0d",
+            "isWholeLine": true
+          },
+          "purple": {
+            "color": "#bf7fff80",
+            "backgroundColor": "#bf7fff0d",
+            "isWholeLine": true
+          },
+          "pink": {
+            "color": "#ffbfdf80",
+            "backgroundColor": "#ffbfdf0d",
+            "isWholeLine": true
+          },
+          "cyan": {
+            "color": "#7fffff80",
+            "backgroundColor": "#7fffff0d",
+            "isWholeLine": true
+          },
+          "magenta": {
+            "color": "#ff7fff80",
+            "backgroundColor": "#ff7fff0d",
+            "isWholeLine": true
+          },
+          "teal": {
+            "color": "#7fbfbf80",
+            "backgroundColor": "#7fbfbf0d",
+            "isWholeLine": true
+          },
+          "lime": {
+            "color": "#7fe63380",
+            "backgroundColor": "#7fe6330d",
+            "isWholeLine": true
           }
         }
       }

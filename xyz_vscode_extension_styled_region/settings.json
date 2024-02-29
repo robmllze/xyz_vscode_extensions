@@ -1,5 +1,5 @@
 {
-    "xyz.styledRegion.styles": {
+    "xyz-styled-region.styles": {
         "example-style": {
             "border": "2px solid red", // Defines the border of the region
             "outline": "1px dashed blue", // Outlines the region

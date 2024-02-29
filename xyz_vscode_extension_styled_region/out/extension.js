@@ -14,14 +14,14 @@ let activeEditor;
 let timeout = null;
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 function activate(context) {
-    console.log("Congratulations, your extension \"xyz-styled-region\" is now active!");
+    console.log("[xyz-styled-region] Extension is now active!");
     setUpStyling();
-    let activateCommand = vscode.commands.registerCommand("xyz-styled-region.activate", () => {
-        vscode.window.showInformationMessage("Activated \"xyz_styled_region\" styling!");
+    let activateCommand = vscode.commands.registerCommand("extension.activate", () => {
+        vscode.window.showInformationMessage("[xyz-styled-region] Activated region styling!");
         setUpStyling();
     });
-    let deactivateCommand = vscode.commands.registerCommand("xyz-styled-region.deactivate", () => {
-        vscode.window.showInformationMessage("Deactivated \"xyz_styled_region\" styling!");
+    let deactivateCommand = vscode.commands.registerCommand("extension.deactivate", () => {
+        vscode.window.showInformationMessage("[xyz-styled-region]  Deactivated region styling!");
         tearDownStyling();
     });
     context.subscriptions.push(activateCommand, deactivateCommand);
@@ -66,7 +66,7 @@ function updateDecorations() {
     const text = activeEditor.document.getText();
     const styleRegex = /(( *(\/\/[\/]?|##|#)).([\w\-]+)(:beg)?\n)([\s\S]*?)(\n( *(\3)).\4(:end|~))/g;
     let match;
-    const styleConfig = vscode.workspace.getConfiguration("xyz.styledRegion.styles");
+    const styleConfig = vscode.workspace.getConfiguration("xyz-styled-region.styles");
     while (match = styleRegex.exec(text)) {
         const styleName = match[4];
         const styleProperties = styleConfig[styleName];

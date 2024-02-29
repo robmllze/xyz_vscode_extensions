@@ -6,7 +6,7 @@
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
 
-import * as vscode from "vscode";
+import * as vscode from 'vscode';
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
@@ -16,17 +16,17 @@ let timeout: NodeJS.Timer | null = null;
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log("[XYZ Styled Region] Extensionis is now active!");
+	console.log("[xyz-styled-region] Extension is now active!");
 
 	setUpStyling();
 
 	let activateCommand = vscode.commands.registerCommand("extension.activate", () => {
-		vscode.window.showInformationMessage("[XYZ Styled Region] Activated region styling!");
+		vscode.window.showInformationMessage("[xyz-styled-region] Activated region styling!");
 		setUpStyling();
 	});
 
 	let deactivateCommand = vscode.commands.registerCommand("extension.deactivate", () => {
-		vscode.window.showInformationMessage("[XYZ Styled Region] Deactivated region styling!");
+		vscode.window.showInformationMessage("[xyz-styled-region]  Deactivated region styling!");
 		tearDownStyling();
 	});
 
@@ -83,7 +83,7 @@ function updateDecorations() {
 	const styleRegex = /(( *(\/\/[\/]?|##|#)).([\w\-]+)(:beg)?\n)([\s\S]*?)(\n( *(\3)).\4(:end|~))/g;
 	let match;
 
-	const styleConfig = vscode.workspace.getConfiguration("xyz.styledRegion.styles");
+	const styleConfig = vscode.workspace.getConfiguration("xyz-styled-region.styles");
 
 	while (match = styleRegex.exec(text)) {
 		const styleName = match[4];
