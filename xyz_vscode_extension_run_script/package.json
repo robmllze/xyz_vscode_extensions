@@ -1,7 +1,7 @@
 {
   "name": "xyz-run-script",
   "displayName": "XYZ Run Script",
-  "description": "Allows you to run scripts via right-click, then select 'Run Script'.",
+  "description": "An extension that allows you to run scripts via right-click.",
   "publisher": "robmllze",
   "version": "0.1.0",
   "engines": {
@@ -40,6 +40,7 @@
       "title": "[xyz-run-script] Configuration",
       "properties": {
         "xyz-run-script.commands": {
+          "description": "File extensions to commands mapping for executing scripts.",
           "type": "object",
           "default": {
             ".c": "gcc -o tempExecutable && ./tempExecutable",
@@ -66,8 +67,7 @@
             ".swift": "swift",
             ".ts": "ts-node",
             ".zsh": "zsh"
-          },
-          "description": "Mapping of file extensions to commands for executing scripts."
+          }
         }
       }
     }

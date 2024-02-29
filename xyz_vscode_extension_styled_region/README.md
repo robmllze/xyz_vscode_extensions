@@ -41,10 +41,10 @@ An extension that allows you to apply custom styles to marked regions in your co
 
 **Note:** The style definition format supports `//`, `///`, `#` and `##` comments.
 
-2. Add an entry to `.vscode/settings.json` to define your styles. You may copy the following styles:
+2. You can add an entry to your project's `.vscode/settings.json` to define your styles. Here are the default styles that already come with the extension for your reference:
 
 ```json
-"xyz.styledRegion.styles": {
+"xyz-styled-region.styles": {
     "example-style": {
         "border": "2px solid red", // Defines the border of the region
         "outline": "1px dashed blue", // Outlines the region
@@ -190,17 +190,6 @@ An extension that allows you to apply custom styles to marked regions in your co
 }
 ```
 
-## Contributing
-
-```zsh
-# Clone the repository.
-git clone https://github.com/robmllze/xyz_styled_region.git
-# Install the dependencies.
-npm install
-```
-
-Test your changes by running and submit a pull request.
-
 ## Known Issues
 
 - The extension gets enabled on startup. This is apparently bad for performance.
@@ -215,9 +204,11 @@ If you encounter any issues or want to give feedback, feel free to open an issue
 
 This extension is licensed under the [MIT License](LICENSE).
 
-## Other Cool Packages
+## Other Cool Extensions by XYZ
 
+- Easily hide files and folders that are listed in your project's `.hideme` file with [XYZ .hideme](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-hideme)
+- Enhance your coding experience with [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region)
 - Rename files and folders in your project in bulk with [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename)
-- Easily hide files and folders that are listed in your project's `.hideme` file. [XYZ .hideme](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-hideme)
+- Run scripts via right-click with [XYZ Run Script](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-run-script)
 
 <img src="xyz_vscode_extension_styled_region/icon.png" alt="Alt text" width="72px" height="72px"/>
