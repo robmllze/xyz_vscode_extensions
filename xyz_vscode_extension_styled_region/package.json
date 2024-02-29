@@ -1,9 +1,9 @@
 {
   "name": "xyz-styled-region",
   "displayName": "XYZ Styled Region",
-  "description": "Allows you to add styles to marked regions in your code",
+  "description": "Allows that allows you to add styles to marked regions in your code",
   "publisher": "robmllze",
-  "version": "0.16.3",
+  "version": "0.17.0",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -24,28 +24,28 @@
   "contributes": {
     "commands": [
       {
-        "command": "xyz-styled-region.activate",
+        "command": "extension.activate",
         "title": "[XYZ Styled Region] Activate"
       },
       {
-        "command": "xyz-styled-region.deactivate",
+        "command": "extension.deactivate",
         "title": "[XYZ Styled Region] Deactivate"
       }
     ],
     "menus": {
       "commandPalette": [
         {
-          "command": "xyz-styled-region.activate",
+          "command": "extension.activate",
           "when": "editorTextFocus"
         },
         {
-          "command": "xyz-styled-region.deactivate",
+          "command": "extension.deactivate",
           "when": "editorTextFocus"
         }
       ]
     },
     "configuration": {
-      "title": "xyz_styled_region Settings",
+      "title": "XYZ Styled Region Configuration",
       "properties": {
         "xyz.styledRegion.styles": {
           "type": "object",

@@ -1,37 +1,14 @@
-# Change Log
+# Changelog
 
-All notable changes to the "Xyz Bulk Rename" extension will be documented in this file.
+## [Unreleased]
 
-[0.4.0]
+- Initial planning and design.
 
-- Minor changes
+## [0.1.0]
 
-[0.3.7]
+- Initial release.
 
-- Updated name and README
+## [0.5.0]
 
-[0.3.2]
-
-- Improved video example
-
-[0.3.1]
-
-- Added a video example
-
-[0.3.0]
-
-- *BULK_RENAME.txt* will now be *.BULK_RENAME.txt*
-- Updated README
-
-[0.2.1]
-
-- Updated README
-
-[0.2.0]
-
-- Fixed some issues
-
-[0.1.0]
-
-- Initial release
+- Current release.
 

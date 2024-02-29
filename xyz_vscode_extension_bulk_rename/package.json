@@ -2,8 +2,8 @@
   "publisher": "robmllze",
   "name": "xyz-bulk-rename",
   "displayName": "XYZ Bulk Rename",
-  "description": "An extension to quickly bulk-rename files and folders",
-  "version": "0.4.3",
+  "description": "An extension that allows you to quickly bulk-rename files and folders",
+  "version": "0.5.0",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -22,14 +22,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "xyz-bulk-rename.start",
+        "command": "extension.start",
         "title": "[XYZ Bulk Rename] Start"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "xyz-bulk-rename.start",
+          "command": "extension.start",
           "when": "explorerViewletFocus"
         }
       ]

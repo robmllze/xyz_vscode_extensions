@@ -16,17 +16,17 @@ let timeout: NodeJS.Timer | null = null;
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log("Congratulations, your extension \"xyz-styled-region\" is now active!");
+	console.log("[XYZ Styled Region] Extensionis is now active!");
 
 	setUpStyling();
 
-	let activateCommand = vscode.commands.registerCommand("xyz-styled-region.activate", () => {
-		vscode.window.showInformationMessage("Activated \"xyz_styled_region\" styling!");
+	let activateCommand = vscode.commands.registerCommand("extension.activate", () => {
+		vscode.window.showInformationMessage("[XYZ Styled Region] Activated region styling!");
 		setUpStyling();
 	});
 
-	let deactivateCommand = vscode.commands.registerCommand("xyz-styled-region.deactivate", () => {
-		vscode.window.showInformationMessage("Deactivated \"xyz_styled_region\" styling!");
+	let deactivateCommand = vscode.commands.registerCommand("extension.deactivate", () => {
+		vscode.window.showInformationMessage("[XYZ Styled Region] Deactivated region styling!");
 		tearDownStyling();
 	});
 

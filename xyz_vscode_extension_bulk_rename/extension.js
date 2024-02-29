@@ -72,8 +72,8 @@ async function bulkRename() {
 //
 
 function activate(context) {
-	// Register the 'xyz-bulk-rename.start' command
-	let disposable = vscode.commands.registerCommand('xyz-bulk-rename.start', async function () {
+	// Register the 'extension.start' command
+	let disposable = vscode.commands.registerCommand('extension.start', async function () {
 		bulkRename();
 	});
 	context.subscriptions.push(disposable);

@@ -1,14 +1,13 @@
-# Change Log
+# Changelog
 
-## [0.15.1]
+## [Unreleased]
 
-- Changed default colors and added a `do-not-modify` region
-- Further reduced debouncer time from 250ms to 225ms
+- Initial planning and design.
 
-## [0.14.1]
+## [0.13.1]
 
-- Reduced debouncer time from 500ms to 250ms
+- Initial release.
 
-## [0.13.3]
+## [0.17.0]
 
-- Initial release
+- Current release.

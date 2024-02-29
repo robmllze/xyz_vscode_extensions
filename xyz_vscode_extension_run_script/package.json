@@ -1,0 +1,95 @@
+{
+  "name": "xyz-run-script",
+  "displayName": "XYZ Run Script",
+  "description": "Allows you to run scripts via right-click, then select 'Run Script'.",
+  "publisher": "robmllze",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robmllze/xyz_vscode_extensions.git"
+  },
+  "categories": [
+    "Education",
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.runScript",
+        "title": "[xyz-run-script] Run"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceScheme==file",
+          "command": "extension.runScript",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "[xyz-run-script] Configuration",
+      "properties": {
+        "xyz-run-script.commands": {
+          "type": "object",
+          "default": {
+            ".c": "gcc -o tempExecutable && ./tempExecutable",
+            ".cpp": "g++ -o tempExecutable && ./tempExecutable",
+            ".cs": "dotnet run",
+            ".dart": "dart",
+            ".fs": "dotnet fsi",
+            ".go": "go run",
+            ".groovy": "groovy",
+            ".java": "javac && java",
+            ".jl": "julia",
+            ".js": "node",
+            ".kt": "kotlinc -script",
+            ".lua": "lua",
+            ".php": "php",
+            ".pl": "perl",
+            ".ps1": "pwsh",
+            ".py": "python",
+            ".r": "Rscript",
+            ".rb": "ruby",
+            ".rs": "rustc",
+            ".scala": "scala",
+            ".sh": "bash",
+            ".swift": "swift",
+            ".ts": "ts-node",
+            ".zsh": "zsh"
+          },
+          "description": "Mapping of file extensions to commands for executing scripts."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}

@@ -1,9 +1,13 @@
-# Change Log
+# Changelog
 
-## [0.13.0]
+## [Unreleased]
 
-- Bug fixes
+- Initial planning and design.
 
 ## [0.10.0]
 
-- Initial release
+- Initial release.
+
+## [0.13.0]
+
+- Current release.
