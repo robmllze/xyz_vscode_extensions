@@ -2,6 +2,7 @@
   "name": "xyz-run-tasks",
   "displayName": "XYZ Run Tasks",
   "description": "An extension that allows you run your workspace tasks via the explorer menu.",
+  "publisher": "robmllze",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.87.0"
