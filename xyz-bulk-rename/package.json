@@ -23,7 +23,7 @@
     "commands": [
       {
         "command": "extension.start",
-        "title": "[XYZ Bulk Rename] Start"
+        "title": "[xyz-bulk-rename] Start"
       }
     ],
     "menus": {

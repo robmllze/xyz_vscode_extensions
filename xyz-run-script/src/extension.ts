@@ -21,13 +21,13 @@ export function activate(context: vscode.ExtensionContext) {
 			const command = `${commandsMap[scriptExtension]} ${scriptPath}`;
 
 			// Get or create a terminal to run the script.
-			const terminal = vscode.window.terminals.find(t => t.name === "Script Output") || vscode.window.createTerminal("Script Output");
+			const terminal = vscode.window.terminals.find(t => t.name === "[xyz-run-script] Output") || vscode.window.createTerminal("[xyz-run-script] Outpu");
 			terminal.show();
 
 			// Use terminal to execute the command.
 			terminal.sendText(command, true);
 		} else {
-			vscode.window.showWarningMessage(`No command found for ${scriptExtension} files. Please configure it in settings.`);
+			vscode.window.showWarningMessage(`[xyz-run-script] No command found for ${scriptExtension} files. Please configure it in settings.`);
 		}
 	});
 

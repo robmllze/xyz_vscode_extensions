@@ -33,13 +33,13 @@ function readHideList(workspacePath: string): string[] {
 				}).filter(line => line !== '');
 				allLines.push(...lines);
 			} catch (error) {
-				console.error(`Error reading .hideme file: ${error}`);
+				console.error(`[xyz_hideme] Error reading .hideme file: ${error}`);
 			}
 		});
 
 		return allLines.filter((entry) => entry !== "");
 	} catch (error) {
-		console.error(`Error reading .hideme file: ${error}`);
+		console.error(`[xyz_hideme] Error reading .hideme file: ${error}`);
 		return [];
 	}
 }
@@ -58,7 +58,7 @@ function listFilesWithHidemeExtension(workspacePath: string): string[] {
 
 		return hidemeFiles;
 	} catch (error) {
-		console.error(`Error listing files with .hideme extension: ${error}`);
+		console.error(`[xyz_hideme] Error listing files with .hideme extension: ${error}`);
 		return [];
 	}
 }
@@ -167,7 +167,7 @@ const disposable = vscode.commands.registerTextEditorCommand("extension.toggleCu
 		});
 
 	} else {
-		vscode.window.showInformationMessage("Current file does not start or end with .hideme.");
+		vscode.window.showInformationMessage("[xyz_hideme] Current file does not start or end with .hideme.");
 	}
 });
 
@@ -191,7 +191,7 @@ function toggleIndentation(text: string): string {
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log("[XYZ .hideme] is now active.");
+	console.log("[xyz_hideme] Extension is now active.");
 
 	const disposables: vscode.Disposable[] = [];
 
@@ -215,5 +215,5 @@ export function activate(context: vscode.ExtensionContext) {
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 export function deactivate() {
-	console.log("[XYZ .hideme] is now deactivated.");
+	console.log("[xyz_hideme] Extension is now deactivated.");
 }

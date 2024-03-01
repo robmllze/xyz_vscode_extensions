@@ -6,9 +6,9 @@
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
 
-const vscode = require('vscode');
-const path = require('path');
-const fs = require('fs');
+const vscode = require("vscode");
+const path = require("path");
+const fs = require("fs");
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
@@ -18,7 +18,7 @@ async function bulkRename() {
 	// Get workspace folders and check if there are any
 	const folders = vscode.workspace.workspaceFolders;
 	if (!folders) {
-		vscode.window.showInformationMessage('No workspace folders found');
+		vscode.window.showInformationMessage("[xyz-bulk-rename] No workspace folders found.");
 		return;
 	}
 
@@ -28,8 +28,8 @@ async function bulkRename() {
 	} = await getAllFilesAndFolders(folders[0].uri.fsPath);
 
 	// Generate content for BULK_RENAME.txt file, create the file and open it in the editor
-	const content = `Files:\n${fileList.join('\n')}\n\nFolders:\n${foldersList.join('\n')}`;
-	const fileName = '.BULK_RENAME.txt';
+	const content = `Files:\n${fileList.join("\n")}\n\nFolders:\n${foldersList.join("\n")}`;
+	const fileName = ".BULK_RENAME.txt";
 	const filePath = path.join(folders[0].uri.fsPath, fileName);
 	const fileUri = vscode.Uri.file(filePath);
 
@@ -42,8 +42,8 @@ async function bulkRename() {
 			// If the saved file is the BULK_RENAME.txt file, get updated
 			// content and update file and folder names accordingly
 			if (event.uri.toString() === fileUri.toString()) {
-				const updatedContent = fs.readFileSync(filePath, 'utf-8');
-				const newFoldersList = updatedContent.split('\n\nFolders:\n')[1].split('\n');
+				const updatedContent = fs.readFileSync(filePath, "utf-8");
+				const newFoldersList = updatedContent.split("\n\nFolders:\n")[1].split("\n");
 				for (let i = 0; i < foldersList.length; i++) {
 					const oldFolder = foldersList[i];
 					const newFolder = newFoldersList[i];
@@ -52,7 +52,7 @@ async function bulkRename() {
 					}
 				}
 				foldersList = newFoldersList;
-				const newFiles = updatedContent.split('\n\nFolders:\n')[0].split('\n').slice(1);
+				const newFiles = updatedContent.split("\n\nFolders:\n")[0].split("\n").slice(1);
 				for (let i = 0; i < fileList.length; i++) {
 					const oldFile = fileList[i];
 					const newFile = newFiles[i];
@@ -72,8 +72,8 @@ async function bulkRename() {
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 function activate(context) {
-	// Register the 'extension.start' command
-	let disposable = vscode.commands.registerCommand('extension.start', async function () {
+	// Register the "extension.start" command
+	let disposable = vscode.commands.registerCommand("extension.start", async function () {
 		bulkRename();
 	});
 	context.subscriptions.push(disposable);
@@ -122,7 +122,7 @@ async function getAllFilesAndFolders(folderPath) {
 	const foldersList = [];
 	for (const entry of entries) {
 		const name = entry.name;
-		if (name.startsWith('.')) continue;
+		if (name.startsWith(".")) continue;
 		const fullPath = path.join(folderPath, name);
 		if (entry.isFile()) {
 			fileList.push(fullPath);

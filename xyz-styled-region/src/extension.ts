@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	let deactivateCommand = vscode.commands.registerCommand("extension.deactivate", () => {
-		vscode.window.showInformationMessage("[xyz-styled-region]  Deactivated region styling!");
+		vscode.window.showInformationMessage("[xyz-styled-region] Deactivated region styling!");
 		tearDownStyling();
 	});
 
