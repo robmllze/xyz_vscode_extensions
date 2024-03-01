@@ -3,7 +3,7 @@
   "displayName": "XYZ Styled Region",
   "description": "Allows that allows you to add styles to marked regions in your code",
   "publisher": "robmllze",
-  "version": "0.17.0",
+  "version": "0.17.1",
   "engines": {
     "vscode": "^1.82.0"
   },
