@@ -1,0 +1,66 @@
+{
+  "name": "xyz-run-tasks",
+  "displayName": "XYZ Run Tasks",
+  "description": "An extension that allows you run your workspace tasks via the explorer menu.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "xyzRunTasksContainer",
+          "title": "XYZ Run Tasks",
+          "icon": "$(debug-start)"
+        }
+      ]
+    },
+    "views": {
+      "xyzRunTasksContainer": [
+        {
+          "id": "tasksView",
+          "name": "Workspace Tasks"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "extension.runTask",
+        "title": "[xyz-run-tasks] Run Task"
+      },
+      {
+        "command": "extension.refreshTasks",
+        "title": "[xyz-run-tasks] Refresh Tasks"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "@vscode/test-electron": "^2.3.4"
+  }
+}
