@@ -2,7 +2,7 @@
   "publisher": "robmllze",
   "name": "xyz-bulk-rename",
   "displayName": "XYZ Bulk Rename",
-  "description": "An extension that allows you to quickly bulk-rename files and folders",
+  "description": "An extension that allows you to quickly bulk-rename files and folders.",
   "version": "0.5.0",
   "engines": {
     "vscode": "^1.76.0"

@@ -2,7 +2,15 @@
 
 An extension that allows you to run scripts via right-click.
 
-# How to use
+## Installation
+
+1. Open VS Code.
+2. Go to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl+Shift+X` on Windows or `Cmd+Shift+X` on MacOS.
+3. Search for "XYZ Run Script".
+4. Install and reload VS Code.
+5. This extension is activated by default. Disable the extension to deactivate it.
+
+# Usage Instructions
 
 1. Right click on a file in the explorer.
 2. Select `[xyz-run-script] Run` from the context menu.
@@ -12,11 +20,11 @@ An extension that allows you to run scripts via right-click.
 
 This extension is licensed under the [MIT License](LICENSE).
 
-## Other Cool Extensions by XYZ
+## All Extensions by XYZ
 
-- Easily hide files and folders that are listed in your project's `.hideme` file with [XYZ .hideme](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-hideme)
-- Enhance your coding experience with [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region)
-- Rename files and folders in your project in bulk with [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename)
-- Run scripts via right-click with [XYZ Run Script](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-run-script)
+- [XYZ .hideme](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-hideme): An extension that allows you to easily hide files and folders that are listed in your project's `.hideme` file.
+- [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region): An extension that allows you to apply custom styles to marked regions in your code. Enhance your coding experience with visually appealing regions, making it easier to read, debug, and navigate your code.
+- [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename): An extension that allows you to quickly bulk-rename files and folders
+- [XYZ Run Script](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-run-script): An extension that allows you to run scripts via right-click.
 
 <img src="xyz_vscode_extension_hideme/icon.png" alt="Alt text" width="72px" height="72px"/>

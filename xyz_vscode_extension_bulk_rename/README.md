@@ -1,6 +1,6 @@
 # XYZ Bulk Rename
 
-An extension for Visual Studio Code to quickly bulk-rename files and folders.
+An extension that allows you to quickly bulk-rename files and folders.
 
 ## Usage Example
 
@@ -18,7 +18,7 @@ An extension for Visual Studio Code to quickly bulk-rename files and folders.
 
 Bulk-renaming files can break your project if you're not careful. Be sure to try this extension with a dummy project before you use it with an important project. Always save your project before bulk-renaming files or folders in case you break something or the extension behaves in an unexpected way.
 
-## Usage
+## Usage Instructions
 
 1. Open a a workspace in Visual Studio Code.
 2. Save your project.
@@ -39,11 +39,11 @@ Bulk-renaming files can break your project if you're not careful. Be sure to try
 
 This extension is licensed under the [MIT License](LICENSE).
 
-## Other Cool Extensions by XYZ
+## All Extensions by XYZ
 
-- Easily hide files and folders that are listed in your project's `.hideme` file with [XYZ .hideme](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-hideme)
-- Enhance your coding experience with [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region)
-- Rename files and folders in your project in bulk with [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename)
-- Run scripts via right-click with [XYZ Run Script](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-run-script)
+- [XYZ .hideme](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-hideme): An extension that allows you to easily hide files and folders that are listed in your project's `.hideme` file.
+- [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region): An extension that allows you to apply custom styles to marked regions in your code. Enhance your coding experience with visually appealing regions, making it easier to read, debug, and navigate your code.
+- [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename): An extension that allows you to quickly bulk-rename files and folders
+- [XYZ Run Script](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-run-script): An extension that allows you to run scripts via right-click.
 
 <img src="xyz_vscode_extension_bulk_rename/icon.png" alt="Alt text" width="72px" height="72px"/>
