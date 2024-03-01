@@ -1,3 +1,11 @@
-**Get your personal access token for publishing to Visual Studio Code Marketplace via Azure DevOps here:**
+# README
 
-https://dev.azure.com/YOUR_USERNAME/_usersSettings/tokens
+**Logging in to vsce:**
+
+```zsh
+vsce login robmllze
+```
+
+**Managing personal access tokens:**
+
+https://dev.azure.com/robmllze/_usersSettings/tokens
