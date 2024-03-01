@@ -4,7 +4,7 @@ An extension that allows you to quickly bulk-rename files and folders.
 
 ## Usage Example
 
-![Usage Example](xyz_vscode_extension_bulk_rename/example.gif)
+![Usage Example](xyz-bulk-rename/example.gif)
 
 ## Installation
 
@@ -46,4 +46,4 @@ This extension is licensed under the [MIT License](LICENSE).
 - [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename): An extension that allows you to quickly bulk-rename files and folders
 - [XYZ Run Script](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-run-script): An extension that allows you to run scripts via right-click.
 
-<img src="xyz_vscode_extension_bulk_rename/icon.png" alt="Alt text" width="72px" height="72px"/>
+<img src="xyz_icon.png" alt="Alt text" width="72px" height="72px"/>
