@@ -10,14 +10,14 @@ An extension that allows you to easily hide files and folders that are listed in
 4. Install and reload VS Code.
 5. This extension is activated by default. Disable the extension to deactivate it.
 
-# Usage Instructions
+## Instructions
 
 1. Create a file ending or starting with `.hideme` in any folder in your project.
 2. List the files and folders you want to hide to the `.hideme` file.
 3. You can use asterisks `*` to hide all files and folders that match a pattern.
 4. Open any `.hideme` file and hit `Cmd+H` on MacOS or `Ctrl+H` on Windows to toggle the visibility of the files and folders listed in the avtive `.hideme` file.
 
-# Example of a .hideme file
+## Example of a .hideme file
 
 ```txt
 lib/main.dart

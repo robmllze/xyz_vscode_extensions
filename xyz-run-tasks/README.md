@@ -10,12 +10,14 @@ An extension that allows you run your workspace tasks via the explorer menu.
 4. Install and reload VS Code.
 5. This extension is activated by default. Disable the extension to deactivate it.
 
-# Usage Instructions
+## Instructions
 
 1. Right click on a file in the explorer under the "XYZ RUN TAKS: WORKSPACE TASKS" section.
 2. Click on the task and it will run in the terminal.
 
-![Usage Example](xyz-run-tasks/example.png)
+## Example
+
+![Example](xyz-run-tasks/example.png)
 
 ## License
 

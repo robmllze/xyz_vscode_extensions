@@ -10,7 +10,7 @@ An extension that allows you to apply custom styles to marked regions in your co
 
 ## Example
 
-![Usage Example](xyz-styled-region/example.png)
+![Example](xyz-styled-region/example.png)
 
 ## Installation
 
@@ -20,7 +20,7 @@ An extension that allows you to apply custom styles to marked regions in your co
 4. Install and reload VS Code.
 5. This extension is activated by default. Disable the extension to deactivate it.
 
-## Usage Instructions
+## Instructions
 
 1. Define your regions in the code using a style block. Begin a style block with `.<STYLE_NAME>` or `.<STYLE_NAME>:beg` and end it with `.<STYLE_NAME>~` or `.<STYLE_NAME>:end`. Replace `<STYLE_NAME>` with a style you defined in `settings.json`.
 

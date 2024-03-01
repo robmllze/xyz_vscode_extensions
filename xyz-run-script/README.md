@@ -10,7 +10,7 @@ An extension that allows you to run scripts via right-click.
 4. Install and reload VS Code.
 5. This extension is activated by default. Disable the extension to deactivate it.
 
-# Usage Instructions
+## Instructions
 
 1. Right click on a file in the explorer.
 2. Select `[xyz-run-script] Run` from the context menu.
