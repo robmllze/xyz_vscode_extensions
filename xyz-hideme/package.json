@@ -2,10 +2,10 @@
   "name": "xyz-hideme",
   "displayName": "XYZ .hideme",
   "description": "An extension that allows you to easily hide files and folders that are listed in your project's `.hideme` file.",
-  "version": "0.14.0",
   "publisher": "robmllze",
+  "version": "0.14.0",
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "^1.87.0"
   },
   "icon": "icon.png",
   "repository": {
@@ -20,6 +20,7 @@
   "activationEvents": [
     "*"
   ],
+  "main": "./out/extension.js",
   "contributes": {
     "keybindings": [
       {
@@ -30,20 +31,16 @@
       }
     ]
   },
-  "main": "./dist/extension.js",
   "scripts": {
-    "vscode:prepublish": "npm run package",
-    "compile": "webpack",
-    "watch": "webpack --watch",
-    "package": "webpack --mode production --devtool hidden-source-map",
-    "compile-tests": "tsc -p . --outDir out",
-    "watch-tests": "tsc -p . -w --outDir out",
-    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.84.0",
+    "@types/vscode": "^1.87.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
@@ -52,9 +49,6 @@
     "glob": "^10.3.3",
     "mocha": "^10.2.0",
     "typescript": "^5.1.6",
-    "ts-loader": "^9.4.4",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
     "@vscode/test-electron": "^2.3.4"
   }
 }

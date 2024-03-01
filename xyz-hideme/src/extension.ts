@@ -1,7 +1,7 @@
 //.title
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// XYZ .hideme
+// XYZ Visual Studio Code Extensions
 //
 // ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //.title~
@@ -95,7 +95,6 @@ function hideFilesAndFolders(hideList: string[]) {
 		return;
 	}
 
-
 	workspaceFolders.forEach((folder) => {
 		const config = vscode.workspace.getConfiguration("files", folder.uri);
 		const updatedExcludes: Record<string, boolean> = {};
@@ -123,7 +122,6 @@ function convertToMacOSPath(inputPath: string) {
 	return macosPath;
 }
 
-
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 function doesMatch(hideStr: string, item: string): boolean {
@@ -138,7 +136,6 @@ function doesMatch(hideStr: string, item: string): boolean {
 	// Check if the item matches the regular expression
 	return regex.test(item);
 }
-
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 

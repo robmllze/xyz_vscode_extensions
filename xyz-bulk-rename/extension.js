@@ -1,14 +1,16 @@
+//.title
+// ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 //
-// Package by Robert Mollentze - robmllze@gmail.com
+// XYZ Visual Studio Code Extensions
 //
+// ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+//.title~
 
 const vscode = require('vscode');
 const path = require('path');
 const fs = require('fs');
 
-//
-//
-//
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 // Define function for bulk renaming of files and folders
 async function bulkRename() {
@@ -67,9 +69,7 @@ async function bulkRename() {
 	}
 }
 
-//
-//
-//
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 function activate(context) {
 	// Register the 'extension.start' command
@@ -110,9 +110,7 @@ function activate(context) {
 	context.subscriptions.push(disposable5);
 }
 
-//
-//
-//
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 // Recursively gets all files and folders in a given folder path
 // and filters out files and folders starting with a dot.
@@ -140,5 +138,7 @@ async function getAllFilesAndFolders(folderPath) {
 		foldersList
 	};
 }
+
+// ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 module.exports = { activate };
