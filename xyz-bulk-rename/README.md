@@ -45,5 +45,6 @@ This extension is licensed under the [MIT License](LICENSE).
 - [XYZ Styled Region](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-styled-region): An extension that allows you to apply custom styles to marked regions in your code. Enhance your coding experience with visually appealing regions, making it easier to read, debug, and navigate your code.
 - [XYZ Bulk Rename](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-bulk-rename): An extension that allows you to quickly bulk-rename files and folders
 - [XYZ Run Script](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-run-script): An extension that allows you to run scripts via right-click.
+- [XYZ Run Tasks](https://marketplace.visualstudio.com/items?itemName=robmllze.xyz-run-tasks): An extension that allows you to run your workspace tasks via the explorer menu.
 
 <img src="xyz_icon.png" alt="Alt text" width="72px" height="72px"/>

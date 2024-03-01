@@ -3,7 +3,7 @@
   "displayName": "XYZ Run Script",
   "description": "An extension that allows you to run scripts via right-click.",
   "publisher": "robmllze",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.87.0"
   },
