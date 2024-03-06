@@ -24,12 +24,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.activate",
-        "title": "[XYZ Styled Region] Activate"
+        "command": "extension.activateaasas",
+        "title": "[xyz-styled-region] Activate"
       },
       {
         "command": "extension.deactivate",
-        "title": "[XYZ Styled Region] Deactivate"
+        "title": "[xyz-styled-region] Deactivate"
       }
     ],
     "menus": {
