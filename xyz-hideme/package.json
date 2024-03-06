@@ -3,7 +3,7 @@
   "displayName": "XYZ .hideme",
   "description": "An extension that allows you to easily hide files and folders that are listed in your project's `.hideme` file.",
   "publisher": "robmllze",
-  "version": "0.15.0",
+  "version": "0.15.1",
   "engines": {
     "vscode": "^1.87.0"
   },

@@ -61,7 +61,7 @@ function triggerUpdateDecorations() {
 	if (timeout) {
 		clearTimeout(timeout);
 	}
-	timeout = setTimeout(updateDecorations, 225);
+	timeout = setTimeout(updateDecorations, 50);
 }
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
