@@ -78,7 +78,7 @@
               }
             },
             "global": {
-              "backgroundColor": "#ff7fff0d",
+              "backgroundColor": "#ffff7f0d",
               "fontWeight": "bold",
               "isWholeLine": true
             },

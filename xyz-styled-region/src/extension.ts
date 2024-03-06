@@ -61,7 +61,8 @@ function triggerUpdateDecorations() {
 	if (timeout) {
 		clearTimeout(timeout);
 	}
-	timeout = setTimeout(updateDecorations, 50);
+	// 0ms delay to run after the current event loop.
+	timeout = setTimeout(updateDecorations, 0);
 }
 
 // ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░

@@ -72,7 +72,7 @@ An extension that allows you to apply custom styles to marked regions in your co
         }
     },
     "global": {
-        "backgroundColor": "#ff7fff0d",
+        "backgroundColor": "#ffff7f0d",
         "fontWeight": "bold",
         "isWholeLine": true
     },
