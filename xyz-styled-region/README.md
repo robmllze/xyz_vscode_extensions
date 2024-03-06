@@ -71,6 +71,11 @@ An extension that allows you to apply custom styles to marked regions in your co
             "color": "red" // Color for the 'after' content
         }
     },
+    "global": {
+        "backgroundColor": "#ff7fff0d",
+        "fontWeight": "bold",
+        "isWholeLine": true
+    },
     "title": {
         "backgroundColor": "#00ff000c",
         "isWholeLine": true
@@ -90,9 +95,6 @@ An extension that allows you to apply custom styles to marked regions in your co
         "backgroundColor": "#1a1a1a1a",
         "isWholeLine": true,
         "outline": "1px dashed #a6a6a64d",
-        "before": {
-            "contentText": "\n"
-        }
     },
     "letter": {
         "color": "#000000",

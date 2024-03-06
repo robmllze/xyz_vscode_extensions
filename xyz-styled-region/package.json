@@ -3,7 +3,7 @@
   "displayName": "XYZ Styled Region",
   "description": "An extension that allows you to apply custom styles to marked regions in your code. Enhance your coding experience with visually appealing regions, making it easier to read, debug, and navigate your code.",
   "publisher": "robmllze",
-  "version": "0.18.2",
+  "version": "0.19.0",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -78,9 +78,9 @@
               }
             },
             "global": {
-              "isWholeLine": false,
+              "backgroundColor": "#ff7fff0d",
               "fontWeight": "bold",
-              "backgroundColor": "#ff7fff0d"
+              "isWholeLine": true
             },
             "title": {
               "backgroundColor": "#00ff000c",

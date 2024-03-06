@@ -26,6 +26,11 @@
                 "color": "red" // Color for the 'after' content
             }
         },
+        "global": {
+            "backgroundColor": "#ff7fff0d",
+            "fontWeight": "bold",
+            "isWholeLine": true
+        },
         "title": {
             "backgroundColor": "#00ff000c",
             "isWholeLine": true
@@ -44,10 +49,7 @@
             "color": "#a6a6a6",
             "backgroundColor": "#1a1a1a1a",
             "isWholeLine": true,
-            "outline": "1px dashed #a6a6a64d",
-            "before": {
-                "contentText": "\n"
-            }
+            "outline": "1px dashed #a6a6a64d"
         },
         "letter": {
             "color": "#000000",
